@@ -22,40 +22,69 @@ h2 {
     color:white;
 }
 
-.contenedor-flex {
+.contenedor-flex-row {
     display: flex;
     border: 3px solid black;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-    flex-flow: row wrap; /*combina flex-direction y flex-wrap*/
+    margin-top: 1rem;
+    /*Direcciones*/
+    flex-direction: row; /* es por default*/
+}
+.contenedor-flex-row-reverse {
+    display: flex;
+    border: 3px solid black;
+    /*Direcciones*/
+    flex-direction: row-reverse;
 }
 
-.contenedor-flex-2 {
-    display: flex;
+.contenedor-flex-column {
+    display:flex;
     border: 3px solid black;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    /*Direcciones*/
+    flex-direction: column; 
 }
 
-.contenedor-flex-3 {
+.contenedor-flex-column-reverse {
     display: flex;
     border: 3px solid black;
-    flex-direction: row; /*por defecto es row*/
+    /*Direcciones*/
+    flex-direction: column-reverse;
+}
+
+.contenedor-flex-nowrap {
+    display: flex;
+    border: 3px solid black;
+    /*Direcciones*/
+    flex-direction: row;
+    /*Wrap*/
+    flex-wrap: nowrap; /*es por defecto*/
+}
+
+.contenedor-flex-wrap{
+    display: flex;
+    border: 3px solid black;
+    /*Direcciones*/
+    flex-direction: row;
+    /*Wrap*/
     flex-wrap: wrap;
 }
-.contenedor-flex-4 {
+
+.contenedor-flex-wrap-reverse{
     display: flex;
     border: 3px solid black;
-    /* flex-direction: row; por defecto es row */
-    /* flex-wrap: wrap; */
+    /*Direcciones*/
+    flex-direction: row;
+    /*Wrap*/
+    flex-wrap: wrap-reverse;
+}
+.contenedor-flex-flow {
+    display: flex;
+    border: 3px solid black;
+    /*Flex flow --> column o row y  wrap, nowrap o wrap-reverse*/
     flex-flow: row wrap;
 }
 
 .elemento-flex{
     padding: 10px;
-}
-.elemento-flex {
-    
     background-color: #E53935;
 }
 
